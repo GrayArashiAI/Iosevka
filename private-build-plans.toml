@@ -14,7 +14,7 @@ export-glyph-names = true
 
     [buildPlans.mihari-iosevka.variants.design]
     capital-b = "more-asymmetric-interrupted-serifless"
-    capital-j = "descending-serifed"
+    capital-j = "flat-hook-serifed"
     capital-k = "curly-serifless"
     capital-p = "open-serifless"
     capital-q = "detached-bend-tailed"
@@ -22,7 +22,15 @@ export-glyph-names = true
     f = "tailed"
     g = "double-storey-open"
     k = "curly-serifless"
+    r = "earless-corner-serifless"
     t = "bent-hook-asymmetric"
+    eszet = "longs-s-lig-descending-serifless"
+    lower-delta = "flat-top"
+    lower-pi = "tailed"
+    cyrl-capital-ka = "curly-serifless"
+    cyrl-ka = "curly-serifless"
+    cyrl-capital-ya = "curly-open-serifless"
+    cyrl-ya = "curly-open-serifless"
     zero = "oval-slashed-split"
     one = "no-base-long-top-serif"
     two = "straight-neck"
@@ -32,15 +40,21 @@ export-glyph-names = true
     seven = "bend-serifed"
     nine = "open-contour"
     asterisk = "hex-low"
-    paren = "flat-arc"
+    paren = "large-contour"
     brace = "straight"
+    guillemet = "curly"
     ampersand = "upper-open"
     dollar = "interrupted"
     percent = "rings-segmented-slash"
     lig-neq = "slightly-slanted-dotted"
+    lig-equal-chain = "without-notch"
+    lig-hyphen-chain = "without-notch"
 
   [buildPlans.mihari-iosevka.ligations]
   inherits = "dlig"
+  
+  [buildPlans.mihari-iosevka.metric-override]
+  cap = 640
 
 [buildPlans.mihari-iosevka.weights.regular]
 shape = 400
