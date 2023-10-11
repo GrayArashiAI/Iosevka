@@ -5,7 +5,7 @@ from = ["mihari-iosevka"]
 
 [buildPlans.mihari-iosevka]
 family = "Mihari Iosevka"
-spacing = "normal"
+spacing = "term"
 serifs = "sans"
 no-cv-ss = false
 export-glyph-names = true
@@ -55,10 +55,10 @@ export-glyph-names = true
   inherits = "dlig"
     
   [buildPlans.mihari-iosevka.metric-override]
-  cap = 680                 # Default=735
+  cap = 670                 # Default=735
   ascender = 680            # Default=735
-  xHeight = 500             # Default=520
-  symbolMid = 320           # Default=340
+  xHeight = 450             # Default=520
+  symbolMid = 280           # Default=340
 
 # [buildPlans.mihari-iosevka.weights.extralight]
 # shape = 200
