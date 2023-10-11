@@ -55,8 +55,8 @@ export-glyph-names = true
   inherits = "dlig"
     
   [buildPlans.mihari-iosevka.metric-override]
-  cap = 700                 # Default=735
-  ascender = 700            # Default=735
+  cap = 680                 # Default=735
+  ascender = 680            # Default=735
   xHeight = 500             # Default=520
   symbolMid = 320           # Default=340
 
