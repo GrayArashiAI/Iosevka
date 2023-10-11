@@ -1,6 +1,7 @@
+[collectPlans.mihari-iosevka-ttc]
+from = ["mihari-iosevka"]
 
-
-# npm run build -- ttf::mihari-iosevka
+# npm run build -- ttc::mihari-iosevka-ttc
 
 [buildPlans.mihari-iosevka]
 family = "Mihari Iosevka"
@@ -14,7 +15,8 @@ export-glyph-names = true
 
     [buildPlans.mihari-iosevka.variants.design]
     capital-b = "more-asymmetric-interrupted-serifless"
-    capital-j = "flat-hook-serifed"
+    capital-i = "short-serifed"
+    capital-j = "flat-hook-serifed-symmetric"
     capital-k = "curly-serifless"
     capital-p = "open-serifless"
     capital-q = "detached-bend-tailed"
@@ -22,8 +24,8 @@ export-glyph-names = true
     f = "tailed"
     g = "double-storey-open"
     k = "curly-serifless"
-    r = "earless-corner-serifless"
-    t = "bent-hook-asymmetric"
+    t = "bent-hook-asymmetric-short-neck"
+    long-s = "bent-hook-tailed"
     eszet = "longs-s-lig-descending-serifless"
     lower-delta = "flat-top"
     lower-pi = "tailed"
@@ -31,8 +33,9 @@ export-glyph-names = true
     cyrl-ka = "curly-serifless"
     cyrl-capital-ya = "curly-open-serifless"
     cyrl-ya = "curly-open-serifless"
+    cyrl-ef = "cursive"
     zero = "oval-slashed-split"
-    one = "no-base-long-top-serif"
+    one = "base-long-top-serif"
     two = "straight-neck"
     three = "flat-top"
     four = "semi-open-non-crossing"
@@ -44,17 +47,28 @@ export-glyph-names = true
     brace = "straight"
     guillemet = "curly"
     ampersand = "upper-open"
-    dollar = "interrupted"
     percent = "rings-segmented-slash"
     lig-neq = "slightly-slanted-dotted"
-    lig-equal-chain = "without-notch"
-    lig-hyphen-chain = "without-notch"
 
   [buildPlans.mihari-iosevka.ligations]
   inherits = "dlig"
-  
+    
   [buildPlans.mihari-iosevka.metric-override]
-  cap = 640
+  cap = 640                 # Default=735
+  ascender = 640            # Default=735
+  xHeight = 480             # Default=520
+  symbolMid = 320           # Default=340
+  onumZeroHeightRatio = 1.3 # Default=1.145
+
+# [buildPlans.mihari-iosevka.weights.extralight]
+# shape = 200
+# menu = 200
+# css = 200
+
+# [buildPlans.mihari-iosevka.weights.light]
+# shape = 300
+# menu = 300
+# css = 300
 
 [buildPlans.mihari-iosevka.weights.regular]
 shape = 400
@@ -65,15 +79,3 @@ css = 400
 shape = 500
 menu = 5
 css = "normal"
-
-[buildPlans.mihari-iosevka.slopes.upright]
-angle = 0
-shape = "upright"
-menu = "upright"
-css = "normal"
-
-[buildPlans.mihari-iosevka.slopes.italic]
-angle = 9.4
-shape = "italic"
-menu = "italic"
-css = "italic"
