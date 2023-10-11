@@ -24,6 +24,7 @@ export-glyph-names = true
     f = "tailed"
     g = "double-storey-open"
     k = "curly-serifless"
+    m = "earless-rounded-double-arch-serifless"
     t = "bent-hook-asymmetric-short-neck"
     long-s = "bent-hook-tailed"
     eszet = "longs-s-lig-descending-serifless"
@@ -54,11 +55,10 @@ export-glyph-names = true
   inherits = "dlig"
     
   [buildPlans.mihari-iosevka.metric-override]
-  cap = 640                 # Default=735
-  ascender = 640            # Default=735
-  xHeight = 480             # Default=520
+  cap = 700                 # Default=735
+  ascender = 700            # Default=735
+  xHeight = 500             # Default=520
   symbolMid = 320           # Default=340
-  onumZeroHeightRatio = 1.3 # Default=1.145
 
 # [buildPlans.mihari-iosevka.weights.extralight]
 # shape = 200
