@@ -1,7 +1,7 @@
 [collectPlans.mihari-iosevka-ttc]
 from = ["mihari-iosevka"]
 
-# npm run build -- ttc::mihari-iosevka-ttc
+# npm run build --ttc::mihari-iosevka-ttc
 
 [buildPlans.mihari-iosevka]
 family = "Mihari Iosevka"
@@ -19,7 +19,7 @@ export-glyph-names = true
     capital-j = "flat-hook-serifed-symmetric"
     capital-k = "curly-serifless"
     capital-p = "open-serifless"
-    capital-q = "detached-bend-tailed"
+    capital-q = "crossing"
     capital-r = "curly-open-serifless"
     f = "tailed"
     g = "double-storey-open"
@@ -59,7 +59,7 @@ export-glyph-names = true
   cap = 670                 # Default=735
   ascender = 680            # Default=735
   xHeight = 470             # Default=520
-  symbolMid = 280           # Default=340
+  symbolMid = 310           # Default=340
 
 # [buildPlans.mihari-iosevka.weights.extralight]
 # shape = 200
