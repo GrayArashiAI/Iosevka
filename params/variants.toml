@@ -871,6 +871,7 @@ next = "leg"
 
 [prime.capital-r.variants-buildup.stages.openness.closed]
 rank = 1
+groupRank = 10
 keyAffix = ""
 selectorAffix.R = ""
 selectorAffix."R/sansSerif" = ""
@@ -879,6 +880,7 @@ selectorAffix.RRotunda = ""
 
 [prime.capital-r.variants-buildup.stages.openness.open]
 rank = 2
+groupRank = 20
 descriptionAffix = "open contour"
 selectorAffix.R = "open"
 selectorAffix."R/sansSerif" = "open"
@@ -891,6 +893,7 @@ mode = "prepend"
 
 [prime.capital-r.variants-buildup.stages.leg.straight]
 rank = 1
+groupRank = 1
 descriptionAffix = "straight leg"
 selectorAffix.R = "straight"
 selectorAffix."R/sansSerif" = "straight"
@@ -899,6 +902,7 @@ selectorAffix.RRotunda = "straight"
 
 [prime.capital-r.variants-buildup.stages.leg.curly]
 rank = 2
+groupRank = 2
 descriptionAffix = "curly leg"
 selectorAffix.R = "curly"
 selectorAffix."R/sansSerif" = "curly"
@@ -907,6 +911,7 @@ selectorAffix.RRotunda = "curly"
 
 [prime.capital-r.variants-buildup.stages.leg.standing]
 rank = 3
+groupRank = 3
 descriptionAffix = "standing leg (like Helvetica)"
 selectorAffix.R = "standing"
 selectorAffix."R/sansSerif" = "standing"
@@ -2296,6 +2301,24 @@ selector."dotlessi/sansSerif" = "diagonalTailed"
 selector."dotlessi/compLigRight" = "serifedDiagonalTailed"
 selector."dotlessi/ital" = "serifedDiagonalTailed"
 
+[prime.i.variants.semi-tailed]
+rank = 13
+groupRank = 2
+description = "`i` with slightly curly tail"
+selector.dotlessi = "semiTailed"
+selector."dotlessi/sansSerif" = "semiTailed"
+selector."dotlessi/compLigRight" = "serifedSemiTailed"
+selector."dotlessi/ital" = "semiTailed"
+
+[prime.i.variants.serifed-semi-tailed]
+rank = 14
+groupRank = 2
+description = "`i` with top serif and slightly curly tail"
+selector.dotlessi = "serifedSemiTailed"
+selector."dotlessi/sansSerif" = "semiTailed"
+selector."dotlessi/compLigRight" = "serifedSemiTailed"
+selector."dotlessi/ital" = "serifedSemiTailed"
+
 
 
 [prime.j]
@@ -2670,6 +2693,34 @@ selector."l/phoneticLeft" = "hookyPL"
 selector.lCurlyTail = "hooky"
 selector.lyogh = "hooky"
 
+[prime.l.variants.semi-tailed]
+rank = 13
+groupRank = 2
+description = "`l` with slightl curly tail"
+selector.l = "semiTailed"
+selector."l/sansSerif" = "semiTailed"
+selector."l/compLigRight" = "serifedSemiTailed"
+selector."l/reduced/decompress" = "semiTailedDec"
+selector."l/reduced/rtail" = "seriflessRTail"
+selector."l/reduced/rtailDec" = "seriflessRTailDec"
+selector."l/phoneticLeft" = "seriflessPL"
+selector.lCurlyTail = "serifless"
+selector.lyogh = "serifless"
+
+[prime.l.variants.serifed-semi-tailed]
+rank = 14
+groupRank = 2
+description = "`l` with top serif and slightl curly tail"
+selector.l = "serifedSemiTailed"
+selector."l/sansSerif" = "semiTailed"
+selector."l/compLigRight" = "serifedSemiTailed"
+selector."l/reduced/decompress" = "serifedSemiTailed"
+selector."l/reduced/rtail" = "hookyRTail"
+selector."l/reduced/rtailDec" = "hookyRTailDec"
+selector."l/phoneticLeft" = "hookyPL"
+selector.lCurlyTail = "hooky"
+selector.lyogh = "hooky"
+
 
 [prime.m]
 sampler = "m"
@@ -2866,6 +2917,7 @@ selectorAffix."grek/eta" = ""
 selectorAffix."grek/eta/sansSerif" = ""
 selectorAffix."cyrl/pe.italic" = ""
 selectorAffix."cyrl/peItalicDescBase" = ""
+selectorAffix."cyrl/yat.italic/base" =  ""
 
 [prime.n.variants-buildup.stages.body.earless-corner]
 rank = 2
@@ -2881,6 +2933,7 @@ selectorAffix."grek/eta" = "earlessCorner"
 selectorAffix."grek/eta/sansSerif" = "earlessCorner"
 selectorAffix."cyrl/pe.italic" = ""
 selectorAffix."cyrl/peItalicDescBase" = ""
+selectorAffix."cyrl/yat.italic/base" = "earlessCorner"
 
 [prime.n.variants-buildup.stages.body.earless-rounded]
 rank = 3
@@ -2896,6 +2949,7 @@ selectorAffix."grek/eta" = "earlessRounded"
 selectorAffix."grek/eta/sansSerif" = "earlessRounded"
 selectorAffix."cyrl/pe.italic" = ""
 selectorAffix."cyrl/peItalicDescBase" = ""
+selectorAffix."cyrl/yat.italic/base" = "earlessRounded"
 
 [prime.n.variants-buildup.stages.terminal."*"]
 next = "serifs"
@@ -2914,6 +2968,7 @@ selectorAffix."grek/eta" = "straight"
 selectorAffix."grek/eta/sansSerif" = "straight"
 selectorAffix."cyrl/pe.italic" = "straight"
 selectorAffix."cyrl/peItalicDescBase" = "straight"
+selectorAffix."cyrl/yat.italic/base" = "straight"
 
 [prime.n.variants-buildup.stages.terminal.tailed]
 rank = 2
@@ -2929,6 +2984,7 @@ selectorAffix."grek/eta" = "straight"
 selectorAffix."grek/eta/sansSerif" = "straight"
 selectorAffix."cyrl/pe.italic" = "tailed"
 selectorAffix."cyrl/peItalicDescBase" = "straight"
+selectorAffix."cyrl/yat.italic/base" = "straight"
 
 [prime.n.variants-buildup.stages.serifs.serifless]
 rank = 1
@@ -2945,6 +3001,7 @@ selectorAffix."grek/eta" = "serifless"
 selectorAffix."grek/eta/sansSerif" = "serifless"
 selectorAffix."cyrl/pe.italic" = "serifless"
 selectorAffix."cyrl/peItalicDescBase" = "serifless"
+selectorAffix."cyrl/yat.italic/base" = "serifless"
 
 [prime.n.variants-buildup.stages.serifs.top-left-serifed]
 rank = 2
@@ -2961,6 +3018,7 @@ selectorAffix."grek/eta" = "topLeftSerifed"
 selectorAffix."grek/eta/sansSerif" = "serifless"
 selectorAffix."cyrl/pe.italic" = "topLeftSerifed"
 selectorAffix."cyrl/peItalicDescBase" = "motionSerifed"
+selectorAffix."cyrl/yat.italic/base" = "topLeftSerifed"
 
 [prime.n.variants-buildup.stages.serifs.motion-serifed]
 rank = 3
@@ -2977,6 +3035,7 @@ selectorAffix."grek/eta" = { if = [{ body = "normal" }], then = "topLeftSerifed"
 selectorAffix."grek/eta/sansSerif" = "serifless"
 selectorAffix."cyrl/pe.italic" = "motionSerifed"
 selectorAffix."cyrl/peItalicDescBase" = "motionSerifed"
+selectorAffix."cyrl/yat.italic/base" = { if = [{ body = "normal" }], then = "topLeftSerifed", else = "serifless" }
 
 [prime.n.variants-buildup.stages.serifs.serifed]
 rank = 4
@@ -2992,6 +3051,7 @@ selectorAffix."grek/eta" = { if = [{ body = "normal" }], then = "topLeftSerifed"
 selectorAffix."grek/eta/sansSerif" = "serifless"
 selectorAffix."cyrl/pe.italic" = "serifed"
 selectorAffix."cyrl/peItalicDescBase" = "serifed"
+selectorAffix."cyrl/yat.italic/base" = "serifed"
 
 
 
@@ -3855,6 +3915,33 @@ selectorAffix.x = "cursive"
 selectorAffix."x/sansSerif" = "cursive"
 selectorAffix."cyrl/ha" = "cursive"
 
+[prime.x.variants-buildup.stages.body.semi-chancery-straight]
+rank = 4
+nonBreakingVariantAdditionPriority = 100
+next = "END"
+descriptionAffix = "Semi-chancery shape with straight counter-leg"
+selectorAffix.x = "semiChanceryStraight"
+selectorAffix."x/sansSerif" = "semiChanceryStraight"
+selectorAffix."cyrl/ha" = "semiChanceryStraight"
+
+[prime.x.variants-buildup.stages.body.semi-chancery-curly]
+rank = 5
+nonBreakingVariantAdditionPriority = 100
+next = "END"
+descriptionAffix = "Semi-chancery shape with curly counter-leg"
+selectorAffix.x = "semiChanceryCurly"
+selectorAffix."x/sansSerif" = "semiChanceryCurly"
+selectorAffix."cyrl/ha" = "semiChanceryCurly"
+
+[prime.x.variants-buildup.stages.body.chancery]
+rank = 6
+nonBreakingVariantAdditionPriority = 200
+next = "END"
+descriptionAffix = "Chancery shape"
+selectorAffix.x = "chancery"
+selectorAffix."x/sansSerif" = "chancery"
+selectorAffix."cyrl/ha" = "chancery"
+
 [prime.x.variants-buildup.stages.serifs.serifless]
 rank = 1
 descriptionAffix = "serifs"
@@ -3865,7 +3952,6 @@ selectorAffix."cyrl/ha" = "serifless"
 
 [prime.x.variants-buildup.stages.serifs.motion-serifed]
 rank = 2
-disableIf = [{ body = "cursive" }]
 descriptionAffix = "motion serifs"
 selectorAffix.x = "motionSerifed"
 selectorAffix."x/sansSerif" = "serifless"
@@ -3873,7 +3959,6 @@ selectorAffix."cyrl/ha" = "motionSerifed"
 
 [prime.x.variants-buildup.stages.serifs.serifed]
 rank = 3
-disableIf = [{ body = "cursive" }]
 descriptionAffix = "serifs"
 selectorAffix.x = "serifed"
 selectorAffix."x/sansSerif" = "serifless"
@@ -4535,6 +4620,18 @@ description = "Greek lower Iota (`ι`) with top serif and a diagonal tail"
 selector."grek/iota" = "serifedDiagonalTailed"
 selector."grek/iota/sansSerif" = "diagonalTailed"
 
+[prime.lower-iota.variants.semi-tailed]
+rank = 9
+description = "Greek lower Iota (`ι`) with a slightly curly tail"
+selector."grek/iota" = "semiTailed"
+selector."grek/iota/sansSerif" = "semiTailed"
+
+[prime.lower-iota.variants.serifed-semi-tailed]
+rank = 10
+description = "Greek lower Iota (`ι`) with top serif and a slightly curly tail"
+selector."grek/iota" = "serifedSemiTailed"
+selector."grek/iota/sansSerif" = "semiTailed"
+
 
 
 [prime.capital-lambda]
@@ -4618,6 +4715,16 @@ selector."grek/lambda" = "curlySerifless"
 rank = 4
 description = "More curly Greek small Lambda (`λ`), like Iosevka 2.x, with a tail turns leftward"
 selector."grek/lambda" = "curlyTurnSerifless"
+
+[prime.lower-lambda.variants.tailed-turn]
+rank = 5
+description = "More curly Greek small Lambda (`λ`), with a tail turns leftward at top and a tail turns right at bottom-right"
+selector."grek/lambda" = "tailedTurnSerifless"
+
+[prime.lower-lambda.variants.curly-tailed-turn]
+rank = 6
+description = "More curly Greek small Lambda (`λ`), with a tail turns leftward at top, a tail turns right at bottom-right, and curly bottom-left leg"
+selector."grek/lambda" = "curlyTailedTurnSerifless"
 
 
 
@@ -4749,6 +4856,16 @@ rank = 4
 description = "Greek lower Tau (`τ`) with a diagonal tail"
 selector."grek/tau" = "tau/diagonalTailed"
 
+[prime.lower-tau.variants.semi-tailed]
+rank = 5
+description = "Greek lower Tau (`τ`) with a slightly curly tail"
+selector."grek/tau" = "tau/semiTailed"
+
+[prime.lower-tau.variants.short-tailed]
+rank = 6
+description = "Greek lower Tau (`τ`) with a very short tail"
+selector."grek/tau" = "tau/shortTailed"
+
 
 
 [prime.lower-chi]
@@ -4774,6 +4891,31 @@ rank = 2
 descriptionAffix = "curly shape"
 selectorAffix."grek/chi" = "curly"
 selectorAffix."grek/chi/sansSerif" = "curly"
+
+[prime.lower-chi.variants-buildup.stages.body.semi-chancery-straight]
+rank = 3
+nonBreakingVariantAdditionPriority = 100
+next = "END"
+descriptionAffix = "Semi-chancery shape with straight counter-leg"
+selectorAffix."grek/chi" = "semiChanceryStraight"
+selectorAffix."grek/chi/sansSerif" = "semiChanceryStraight"
+
+[prime.lower-chi.variants-buildup.stages.body.semi-chancery-curly]
+rank = 4
+nonBreakingVariantAdditionPriority = 100
+next = "END"
+descriptionAffix = "Semi-chancery shape with curly counter-leg"
+selectorAffix."grek/chi" = "semiChanceryCurly"
+selectorAffix."grek/chi/sansSerif" = "semiChanceryCurly"
+
+[prime.lower-chi.variants-buildup.stages.body.chancery]
+rank = 5
+nonBreakingVariantAdditionPriority = 200
+next = "END"
+descriptionAffix = "Chancery shape"
+selectorAffix."grek/chi" = "chancery"
+selectorAffix."grek/chi/sansSerif" = "chancery"
+
 
 [prime.lower-chi.variants-buildup.stages.serifs.serifless]
 rank = 1
@@ -6657,17 +6799,17 @@ selector.dollar = "interrupted"
 
 [prime.dollar.variants.open-cap]
 rank = 4
-description = "Dollar symbol with open contour, not exceeding baseline and ascender"
+description = "Dollar symbol with open contour, sized not exceeding baseline and ascender"
 selector.dollar = "openCap"
 
 [prime.dollar.variants.through-cap]
 rank = 5
-description = "Dollar symbol with strike-through vertical bar, not exceeding baseline and ascender"
+description = "Dollar symbol with strike-through vertical bar, sized not exceeding baseline and ascender"
 selector.dollar = "throughCap"
 
 [prime.dollar.variants.interrupted-cap]
 rank = 6
-description = "Dollar symbol with interrupted strike-through vertical bar, not exceeding baseline and ascender"
+description = "Dollar symbol with interrupted strike-through vertical bar, sized not exceeding baseline and ascender"
 selector.dollar = "interruptedCap"
 
 
@@ -6816,7 +6958,22 @@ selector.cent = "through"
 [prime.cent.variants.bar-interrupted]
 rank = 3
 description = "Cent sign (`¢`) with vertical bar breaks at center"
-selector.cent = "barInterrupted"
+selector.cent = "interrupted"
+
+[prime.cent.variants.open-cap]
+rank = 4
+description = "Cent sign (`¢`) with open contour, sized not exceeding baseline and ascender"
+selector.cent = "openCap"
+
+[prime.cent.variants.through-cap]
+rank = 5
+description = "Cent sign (`¢`) with vertical bar all through the `c` part, sized not exceeding baseline and ascender"
+selector.cent = "throughCap"
+
+[prime.cent.variants.bar-interrupted-cap]
+rank = 6
+description = "Cent sign (`¢`) with vertical bar breaks at center, sized not exceeding baseline and ascender"
+selector.cent = "interruptedCap"
 
 
 
@@ -7089,6 +7246,7 @@ capital-x = "straight-serifless"
 capital-y = "straight-serifless"
 capital-z = "straight-serifless"
 # Lowers
+a = "double-storey-serifless"
 b = "toothed-serifless"
 c = "serifless"
 g = "single-storey-serifless"
@@ -7102,6 +7260,7 @@ w = "straight-serifless"
 x = "straight-serifless"
 z = "straight-serifless"
 long-s = "bent-hook-serifless"
+eszet = "sulzbacher-serifless"
 lower-eth = "curly-bar"
 lower-thorn = "serifless"
 # Non-latin
@@ -7185,7 +7344,6 @@ n = "straight-serifless"
 digit-form = "lining"
 
 [default.upright-oblique]
-a = "double-storey-serifless"
 d = "toothed-serifless"
 e = "flat-crossbar"
 f = "serifless"
@@ -7195,7 +7353,6 @@ k = "straight-serifless"
 l = "serifed"
 u = "toothed-serifless"
 y = "straight-serifless"
-eszet = "sulzbacher-serifless"
 
 [default.italic]
 a = "single-storey-tailed"
@@ -7253,9 +7410,11 @@ w = "straight-serifed"
 x = "straight-serifed"
 z = "straight-serifed"
 long-s = "bent-hook-bottom-serifed"
+eszet = "sulzbacher-bottom-serifed"
 lower-thorn = "serifed"
 capital-gamma = "serifed"
 capital-lambda = "straight-base-serifed"
+lower-lambda = "straight-turn"
 lower-mu = "tailed-serifed"
 lower-chi = "straight-serifed"
 cyrl-capital-ze = "unilateral-serifed"
@@ -7284,8 +7443,6 @@ n = "straight-serifed"
 r = "serifed"
 u = "toothed-serifed"
 y = "straight-turn-serifed"
-eszet = "sulzbacher-bottom-serifed"
-lower-lambda = "straight-turn"
 
 [composite.slab.italic]
 a = "single-storey-tailed"
@@ -7306,6 +7463,7 @@ y = "cursive-motion-serifed"
 z = "cursive"
 long-s = "flat-hook-tailed"
 eszet = "sulzbacher-tailed-serifless"
+lower-lambda = "straight"
 lower-mu = "tailed-motion-serifed"
 cyrl-ze = "unilateral-inward-serifed"
 cyrl-ka = "symmetric-connected-top-left-serifed"
@@ -7341,11 +7499,12 @@ y = "straight-turn-serifless"
 long-s = "flat-hook-middle-serifed"
 eszet = "longs-s-lig-serifless"
 lower-eth = "straight-bar"
-lower-iota = "tailed"
-lower-lambda = "straight-turn"
+lower-iota = "semi-tailed"
+lower-lambda = "tailed-turn"
 lower-mu = "toothed-serifless"
 lower-pi = "tailless"
 lower-tau = "tailless"
+lower-chi = "semi-chancery-straight"
 cyrl-capital-zhe = "straight"
 cyrl-zhe = "straight"
 cyrl-capital-ka = "straight-serifless"
@@ -7397,7 +7556,7 @@ y = "straight-turn-serifed"
 z = "straight-serifed"
 long-s = "flat-hook-double-serifed"
 eszet = "longs-s-lig-bottom-serifed"
-lower-iota = "tailed-serifed"
+lower-iota = "serifed-semi-tailed"
 lower-mu = "toothed-serifed"
 cyrl-ze = "unilateral-serifed"
 cyrl-capital-ka = "straight-serifed"
@@ -7444,6 +7603,7 @@ eszet = "longs-s-lig-serifless"
 lower-eth = "straight-bar"
 lower-lambda = "straight-turn"
 lower-xi = "rounded"
+lower-tau = "short-tailed"
 cyrl-capital-zhe = "straight"
 cyrl-zhe = "straight"
 cyrl-capital-ze = "unilateral-serifed"
@@ -7465,6 +7625,7 @@ asterisk = "hex-low"
 brace = "straight"
 guillemet = "straight"
 at = "fourfold"
+cent = "through-cap"
 percent = "rings-continuous-slash"
 partial-derivative = "straight-bar"
 micro-sign = "toothed-serifless"
@@ -7516,10 +7677,11 @@ u = "toothed-serifless"
 y = "straight-turn-serifless"
 long-s = "flat-hook-serifless"
 eszet = "longs-s-lig-serifless"
+lower-chi = "semi-chancery-straight"
 lower-eth = "straight-bar"
-lower-iota = "tailed-serifed"
-lower-lambda = "straight-turn"
-lower-tau = "tailed"
+lower-iota = "serifed-semi-tailed"
+lower-lambda = "tailed-turn"
+lower-tau = "semi-tailed"
 cyrl-capital-zhe = "symmetric-touching"
 cyrl-zhe = "symmetric-touching"
 cyrl-capital-ka = "symmetric-touching-serifless"
@@ -7539,6 +7701,7 @@ brace = "straight"
 guillemet = "straight"
 number-sign = "slanted"
 at = "fourfold"
+cent = "through-cap"
 percent = "rings-continuous-slash"
 question = "corner-flat-hooked"
 micro-sign = "tailed-serifless"
@@ -7551,6 +7714,8 @@ k = "cursive-serifless"
 l = "tailed"
 long-s = "flat-hook-descending"
 eszet = "longs-s-lig-descending-serifless"
+lower-iota = "tailed-serifed"
+lower-tau = "tailed"
 cyrl-zhe = "symmetric-connected"
 cyrl-ka = "symmetric-connected-serifless"
 
@@ -7616,6 +7781,7 @@ u = "toothed-serifless"
 y = "straight-turn-serifless"
 long-s = "flat-hook-middle-serifed"
 eszet = "longs-s-lig-serifless"
+lower-chi = "semi-chancery-straight"
 lower-eth = "straight-bar"
 lower-lambda = "straight-turn"
 cyrl-capital-zhe = "straight"
@@ -7694,17 +7860,17 @@ f = "serifless"
 g = "double-storey-open"
 i = "serifed"
 k = "symmetric-touching-serifless"
-l = "tailed-serifed"
+l = "serifed-semi-tailed"
 r = "corner-hooked-serifed"
 u = "toothed-serifless"
 y = "straight-turn-serifless"
 long-s = "bent-hook-serifless"
 eszet = "longs-s-lig-serifless"
-lower-iota = "tailed-serifed"
+lower-iota = "serifed-semi-tailed"
 lower-lambda = "straight-turn"
 lower-mu = "toothed-serifless"
 lower-xi = "rounded"
-lower-tau = "tailed"
+lower-tau = "semi-tailed"
 cyrl-em = "slanted-sides-hanging-serifless"
 cyrl-capital-u = "straight-turn-serifless"
 cyrl-u = "straight-turn-serifless"
@@ -7783,8 +7949,10 @@ y = "straight-turn-serifless"
 long-s = "flat-hook-serifless"
 eszet = "longs-s-lig-serifless"
 lower-delta = "flat-top"
-lower-iota = "tailed-serifed"
+lower-iota = "serifed-semi-tailed"
 lower-lambda = "straight-turn"
+lower-tau = "short-tailed"
+lower-chi = "straight-motion-serifed"
 cyrl-em = "flat-bottom-serifless"
 cyrl-capital-u = "straight-turn-serifless"
 cyrl-u = "straight-turn-serifless"
@@ -7803,7 +7971,7 @@ brace = "straight"
 guillemet = "straight"
 number-sign = "slanted"
 at = "fourfold"
-cent = "open"
+cent = "open-cap"
 percent = "rings-continuous-slash"
 bar = "force-upright"
 pilcrow = "low"
@@ -7832,6 +8000,7 @@ z = "straight-serifed"
 long-s = "flat-hook-bottom-serifed"
 eszet = "longs-s-lig-bottom-serifed"
 lower-mu = "tailed-serifed"
+lower-chi = "straight-serifed"
 cyrl-ze = "unilateral-serifed"
 cyrl-ka = "symmetric-connected-serifed"
 cyrl-em = "flat-bottom-serifed"
@@ -7868,6 +8037,7 @@ w = "straight-flat-top-serifless"
 y = "straight-turn-serifless"
 long-s = "flat-hook-serifless"
 eszet = "longs-s-lig-serifless"
+lower-iota = "zshaped"
 lower-lambda = "straight-turn"
 cyrl-capital-u = "straight-turn-serifless"
 cyrl-u = "straight-turn-serifless"
@@ -7884,6 +8054,7 @@ paren = "large-contour"
 guillemet = "straight"
 number-sign = "slanted"
 at = "fourfold"
+cent = "through-cap"
 percent = "rings-continuous-slash"
 pilcrow = "low"
 micro-sign = "toothed-serifless"
@@ -7961,12 +8132,12 @@ long-s = "bent-hook-middle-serifed"
 eszet = "longs-s-lig-serifless"
 capital-delta = "curly"
 lower-delta = "flat-top"
-lower-iota = "tailed-serifed"
+lower-iota = "serifed-semi-tailed"
 capital-lambda = "curly-serifless"
-lower-lambda = "curly-turn"
+lower-lambda = "curly-tailed-turn"
 lower-mu = "toothed-serifless"
-lower-tau = "tailed"
-lower-chi = "curly-serifless"
+lower-tau = "semi-tailed"
+lower-chi = "semi-chancery-curly"
 cyrl-capital-zhe = "curly"
 cyrl-zhe = "curly"
 cyrl-capital-ka = "curly-serifless"
@@ -8000,6 +8171,8 @@ lig-hyphen-chain = "with-notch"
 
 [composite.ss08.italic]
 g = "single-storey-serifless"
+lower-iota = "tailed-serifed"
+lower-tau = "tailed"
 
 [composite.ss08.slab-override.design]
 capital-a = "curly-base-serifed"
@@ -8069,15 +8242,16 @@ f = "serifless"
 g = "double-storey"
 i = "hooky"
 k = "straight-serifless"
-l = "tailed-serifed"
+l = "serifed-semi-tailed"
 r = "hookless-serifless"
 u = "toothed-serifless"
 w = "straight-flat-top-serifless"
 y = "straight-turn-serifless"
 long-s = "flat-hook-middle-serifed"
 eszet = "longs-s-lig-serifless"
-lower-iota = "tailed-serifed"
+lower-iota = "serifed-semi-tailed"
 lower-lambda = "straight-turn"
+lower-tau = "short-tailed"
 cyrl-em = "flat-bottom-serifless"
 cyrl-capital-u = "straight-turn-serifless"
 cyrl-u = "straight-turn-serifless"
@@ -8097,8 +8271,8 @@ asterisk = "penta-low"
 guillemet = "straight"
 number-sign = "slanted"
 dollar = "open"
+cent = "through-cap"
 bar = "force-upright"
-pilcrow = "low"
 micro-sign = "tailed-serifless"
 lig-neq = "more-slanted"
 
@@ -8106,6 +8280,8 @@ lig-neq = "more-slanted"
 a = "single-storey-serifless"
 g = "single-storey-serifless"
 i = "tailed-serifed"
+l = "tailed-serifed"
+lower-iota = "tailed-serifed"
 
 [composite.ss09.slab-override.design]
 capital-d = "more-rounded-bilateral-serifed"
@@ -8228,6 +8404,8 @@ asterisk = "hex-high"
 caret = "high"
 brace = "straight"
 guillemet = "straight"
+dollar = "through-cap"
+cent = "through-cap"
 percent = "rings-continuous-slash"
 
 
@@ -8245,9 +8423,9 @@ a = "double-storey-toothless-corner"
 b = "toothless-corner-serifless"
 d = "toothless-corner-serifless"
 g = "single-storey-earless-corner"
-i = "tailed-serifed"
+i = "serifed-semi-tailed"
 k = "symmetric-touching-serifless"
-l = "tailed-serifed"
+l = "serifed-semi-tailed"
 m = "earless-corner-double-arch-short-leg-serifless"
 n = "earless-corner-straight-serifless"
 p = "earless-corner-serifless"
@@ -8258,12 +8436,12 @@ y = "straight-turn-serifless"
 eszet = "longs-s-lig-serifless"
 lower-alpha = "barred-earless-corner-tailed"
 capital-gamma = "bottom-serifed"
-lower-iota = "tailed-serifed"
+lower-iota = "serifed-semi-tailed"
 lower-lambda = "straight-turn"
 lower-mu = "toothless-corner-serifless"
 lower-xi = "rounded"
 lower-pi = "small-capital"
-lower-tau = "tailed"
+lower-tau = "semi-tailed"
 cyrl-capital-zhe = "symmetric-touching"
 cyrl-zhe = "symmetric-touching"
 cyrl-capital-ka = "symmetric-touching-serifless"
@@ -8296,10 +8474,14 @@ micro-sign = "toothless-corner-serifless"
 a = "single-storey-earless-corner-tailed"
 d = "tailed-serifless"
 f = "tailed"
+i = "tailed-serifed"
+l = "tailed-serifed"
 u = "tailed-serifless"
 long-s = "bent-hook-tailed"
 eszet = "longs-s-lig-tailed-serifless"
+lower-iota = "tailed-serifed"
 lower-mu = "tailed-serifless"
+lower-tau = "tailed"
 cyrl-zhe = "cursive"
 micro-sign = "tailed-serifless"
 
@@ -8364,11 +8546,12 @@ i = "hooky"
 k = "symmetric-touching-serifless"
 l = "hooky"
 r = "corner-hooked-serifless"
+t = "bent-hook-short-neck2"
 u = "toothed-serifless"
 y = "straight-turn-serifless"
 long-s = "flat-hook-middle-serifed"
 eszet = "longs-s-lig-serifless"
-lower-iota = "tailed"
+lower-iota = "semi-tailed"
 lower-lambda = "straight-turn"
 lower-mu = "toothed-serifless"
 lower-pi = "tailless"
@@ -8386,8 +8569,10 @@ six = "closed-contour"
 seven = "bend-serifless"
 eight = "crossing-asymmetric"
 nine = "closed-contour"
+paren = "large-contour"
 guillemet = "straight"
 number-sign = "slanted"
+cent = "through-cap"
 percent = "rings-continuous-slash"
 pilcrow = "low"
 micro-sign = "toothed-serifless"
@@ -8417,7 +8602,7 @@ y = "straight-turn-serifed"
 z = "straight-serifed"
 long-s = "flat-hook-double-serifed"
 eszet = "longs-s-lig-bottom-serifed"
-lower-iota = "tailed-serifed"
+lower-iota = "serifed-semi-tailed"
 lower-mu = "toothed-serifed"
 cyrl-ze = "unilateral-serifed"
 cyrl-ka = "symmetric-connected-serifed"
@@ -8541,8 +8726,12 @@ u = "toothed-serifless"
 w = "straight-flat-top-serifless"
 y = "straight-turn-serifless"
 long-s = "flat-hook-double-serifed"
-eszet = "traditional-flat-hook-middle-serifed"
-lower-lambda = "straight-turn"
+eszet = "traditional-flat-hook-serifless"
+lower-delta = "flat-top"
+lower-iota = "serifed-flat-tailed"
+lower-lambda = "tailed-turn"
+lower-tau = "flat-tailed"
+lower-chi = "semi-chancery-straight"
 cyrl-capital-ka = "symmetric-connected-bottom-right-serifed"
 cyrl-ka = "symmetric-connected-bottom-right-serifed"
 cyrl-capital-u = "straight-turn-serifless"
@@ -8586,7 +8775,6 @@ y = "cursive-serifless"
 z = "cursive"
 long-s = "flat-hook-diagonal-tailed-middle-serifed"
 lower-iota = "serifed-diagonal-tailed"
-lower-lambda = "straight"
 lower-tau = "diagonal-tailed"
 cyrl-zhe = "cursive"
 cyrl-u = "cursive-serifless"
@@ -8601,7 +8789,7 @@ k = "straight-serifed"
 u = "toothed-serifed"
 w = "straight-flat-top-serifed"
 y = "straight-turn-serifed"
-eszet = "traditional-flat-hook-dual-serifed"
+eszet = "traditional-flat-hook-bottom-serifed"
 cyrl-capital-ka = "symmetric-connected-serifed"
 cyrl-ka = "symmetric-connected-serifed"
 cyrl-capital-u = "straight-turn-serifed"
@@ -8646,7 +8834,7 @@ g = "single-storey-earless-corner"
 h = "straight-top-left-serifed"
 i = "serifed"
 k = "straight-top-left-and-bottom-right-serifed"
-l = "tailed-serifed"
+l = "serifed-semi-tailed"
 n = "straight-top-left-serifed"
 p = "eared-motion-serifed"
 q = "earless-corner-straight-serifless"
@@ -8745,8 +8933,7 @@ t = "flat-hook"
 y = "straight-turn-serifless"
 eszet = "longs-s-lig-serifless"
 lower-eth = "straight-bar"
-lower-thorn = "motion-serifed"
-lower-lambda = "straight-turn"
+lower-lambda = "tailed-turn"
 cyrl-capital-ze = "unilateral-inward-serifed"
 cyrl-capital-ka = "symmetric-connected-bottom-right-serifed"
 cyrl-capital-u = "straight-turn-serifless"
@@ -8766,7 +8953,7 @@ number-sign = "slanted"
 ampersand = "upper-open"
 at = "fourfold"
 dollar = "interrupted"
-cent = "bar-interrupted"
+cent = "bar-interrupted-cap"
 pilcrow = "low"
 partial-derivative = "straight-bar"
 micro-sign = "tailed-serifless"
@@ -8789,24 +8976,38 @@ r = "corner-hooked-top-serifed"
 s = "unilateral-inward-serifed"
 v = "cursive-serifed"
 w = "cursive-serifless"
-x = "cursive"
+x = "chancery"
 y = "cursive-serifless"
 z = "cursive"
 long-s = "bent-hook-descending"
 eszet = "longs-s-lig-descending-serifless"
-lower-lambda = "straight"
 cyrl-ze = "unilateral-inward-serifed"
 cyrl-ka = "symmetric-connected-bottom-right-serifed"
 cyrl-u = "cursive-serifless"
 cyrl-ya = "straight-motion-serifed"
 
 [composite.ss17.slab-override.design]
+capital-b = "standard-bilateral-serifed"
+capital-d = "standard-bilateral-serifed"
+capital-e = "serifed"
+capital-f = "serifed"
+capital-k = "straight-serifed"
+capital-l = "serifed"
+capital-p = "closed-serifed"
+capital-r = "straight-serifed"
+capital-s = "bilateral-inward-serifed"
 capital-u = "toothed-serifed"
+capital-z = "straight-serifed"
+c = "unilateral-inward-serifed"
+s = "bilateral-inward-serifed"
 y = "straight-turn-serifed"
 eszet = "longs-s-lig-bottom-serifed"
-lower-thorn = "serifed"
+cyrl-ze = "unilateral-inward-serifed"
+cyrl-capital-ka = "symmetric-connected-serifed"
 cyrl-capital-u = "straight-turn-serifed"
 cyrl-u = "straight-turn-serifed"
+cyrl-capital-ya = "straight-serifed"
+cyrl-ya = "straight-serifed"
 micro-sign = "tailed-serifed"
 
 [composite.ss17.slab-override.italic]
@@ -8847,8 +9048,9 @@ y = "straight-turn-serifless"
 long-s = "flat-hook-middle-serifed-xh"
 eszet = "longs-s-lig-serifless"
 lower-alpha = "barred-tailed"
-lower-iota = "tailed-serifed"
+lower-iota = "serifed-semi-tailed"
 lower-lambda = "straight-turn"
+lower-tau = "short-tailed"
 cyrl-capital-u = "straight-turn-serifless"
 cyrl-u = "straight-turn-serifless"
 cyrl-ef = "serifless"
@@ -8866,14 +9068,17 @@ asterisk = "hex-mid"
 underscore = "low"
 guillemet = "straight"
 number-sign = "slanted"
+cent = "through-cap"
 percent = "rings-continuous-slash"
 question = "corner"
+pilcrow = "low"
 micro-sign = "tailed-serifless"
 
 [composite.ss18.italic]
 f = "extended-crossbar-at-x-height"
 long-s = "flat-hook-descending-middle-serifed-xh"
 eszet = "longs-s-lig-descending-serifless"
+lower-iota = "tailed-serifed"
 
 [composite.ss18.slab-override.design]
 capital-g = "toothless-rounded-serifed-hooked"

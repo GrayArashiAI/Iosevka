@@ -35,7 +35,7 @@ const TTCIZE = ["node", "node_modules/otb-ttc-bundle/bin/otb-ttc-bundle"];
 const SEVEN_ZIP = process.env.SEVEN_ZIP_PATH || "7z";
 const TTFAUTOHINT = process.env.TTFAUTOHINT_PATH || "ttfautohint";
 
-const defaultWebFontFormats = ["ttf", "woff2"];
+const defaultWebFontFormats = ["woff2", "ttf"];
 const webfontFormatsFast = ["ttf"];
 const webfontFormatsPages = ["woff2"];
 
@@ -187,6 +187,7 @@ function rectifyPlanForSpacingDerivation(p) {
 		family: "#Validation",
 		desc: "#Validation",
 		spacing: "#Validation",
+		buildCharMap: false,
 		snapshotFamily: null,
 		snapshotFeature: null,
 		targets: null
@@ -244,6 +245,7 @@ const FontInfoOf = computed.group("metadata:font-info-of", async (target, fileNa
 		name: fileName,
 		variants: bp.variants || null,
 		derivingVariants: bp.derivingVariants,
+		buildCharMap: bp.buildCharMap,
 		featureControl: {
 			noCvSs: bp["no-cv-ss"] || false,
 			noLigation: bp["no-ligation"] || false,
@@ -418,7 +420,7 @@ const DistUnhintedTTF = file.make(
 			echo.action(echo.hl.command(`Create TTF`), out.full);
 			const { cacheUpdated } = await silently.node("font-src/index.mjs", {
 				o: out.full,
-				oCharMap: charMapPath,
+				...(fi.buildCharMap ? { oCharMap: charMapPath } : {}),
 				oTtfaControls: ttfaControlsPath,
 				cacheFreshAgeKey: ageKey,
 				iCache: cachePath,
@@ -856,6 +858,9 @@ const PagesDataExport = task(`pages:data-export`, async t => {
 		BuildCM("iosevka", "iosevka-italic"),
 		BuildCM("iosevka", "iosevka-oblique")
 	);
+	await node(`utility/export-tokenized-sample-code.mjs`, {
+		output: Path.resolve(pagesDir, "shared/tokenized-sample-code/alphabet.txt.json")
+	});
 	await node(`utility/export-data/index.mjs`, {
 		charMapPath: cm.full,
 		charMapItalicPath: cmi.full,

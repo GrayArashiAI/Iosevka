@@ -1,5 +1,37 @@
 ## Modifications since last major version
 
+### 27.3.0
+
+* Make the tailed variants of `i` and `l` use the fully-tailed shape even when upright, as is consistent with `t = bent-hook` (#1692).
+  - The old, slightly-curly variants for `i`, `l`, iota (`ι`) and tau (`τ`) are moved to `semi-tailed` variants.
+  - Corresponded SSes are changed to keep the shape identical to the old version.
+* Make Cyrillic Yat to follow Yeri variants. Italic Yat will also respond to variants of `n` (#2047).
+* Add short-tailed lowercase tau (`τ`) (#2050).
+* Fix tailed variants for `U+02A0`.
+* Stylistic set fixes:
+  * Fix `cv44` and `cv99` for `ss13`.
+  * Fix `cv48` and `cv54` for `ss17`.
+  * Fix `cv51` for Etoile.
+  * Fix `cv52` for `ss15` and Etoile.
+  * Fix `cv58` for `ss15`.
+  * Fix `cv59` for `ss07`.
+  * Fix `cv61` for `ss15` and `ss17`.
+  * Fix `cv66` for `ss01`, `ss06`, and `ss15`.
+  * Fix `vsAF` for `ss11`.
+  * Fix `vsAL` for `ss09` and `ss18`.
+
+
+### 27.2.1
+
+* Refine shape of flat `5` (#2030).
+* Fix `ss02`, `ss04`, `ss06`, `ss13`, `ss17`'s application on `i` and `j` (#2033).
+* Add tailed lower lambda (#2036).
+* Add Chancery and Semi-Chancery variants for lowercase `x` and Greek Chi (#2037).
+* Add `arrow-lr` ligation group for C-like's spaceship operators (#2041).
+* Add raised cap-height cent sign (`¢`) variants to `VSAM` (#2044).
+* Fix `cv02`, `cv04`, `cv05`, `cv06`, `cv11`, `cv12`, `cv15`, `cv17`, `cv18`, `cv25`, `cv28`, `cv43`, `cv70`, `cv71`, `cv81`, and `cv82` for `ss17` under slab.
+
+
 ### 27.2.0
 
 * Add characters
