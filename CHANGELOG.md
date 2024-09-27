@@ -1,119 +1,274 @@
 ## Modifications since last major version
 
-### 27.3.0
+### 31.7.1
 
-* Make the tailed variants of `i` and `l` use the fully-tailed shape even when upright, as is consistent with `t = bent-hook` (#1692).
-  - The old, slightly-curly variants for `i`, `l`, iota (`ι`) and tau (`τ`) are moved to `semi-tailed` variants.
-  - Corresponded SSes are changed to keep the shape identical to the old version.
-* Make Cyrillic Yat to follow Yeri variants. Italic Yat will also respond to variants of `n` (#2047).
-* Add short-tailed lowercase tau (`τ`) (#2050).
-* Fix tailed variants for `U+02A0`.
-* Stylistic set fixes:
-  * Fix `cv44` and `cv99` for `ss13`.
-  * Fix `cv48` and `cv54` for `ss17`.
-  * Fix `cv51` for Etoile.
-  * Fix `cv52` for `ss15` and Etoile.
-  * Fix `cv58` for `ss15`.
-  * Fix `cv59` for `ss07`.
-  * Fix `cv61` for `ss15` and `ss17`.
-  * Fix `cv66` for `ss01`, `ss06`, and `ss15`.
-  * Fix `vsAF` for `ss11`.
-  * Fix `vsAL` for `ss09` and `ss18`.
+* Fix internal seams of variants of outlined letters U+1CCE6 and U+1CCEF (#2509).
 
 
-### 27.2.1
+### 31.7.0
 
-* Refine shape of flat `5` (#2030).
-* Fix `ss02`, `ss04`, `ss06`, `ss13`, `ss17`'s application on `i` and `j` (#2033).
-* Add tailed lower lambda (#2036).
-* Add Chancery and Semi-Chancery variants for lowercase `x` and Greek Chi (#2037).
-* Add `arrow-lr` ligation group for C-like's spaceship operators (#2041).
-* Add raised cap-height cent sign (`¢`) variants to `VSAM` (#2044).
-* Fix `cv02`, `cv04`, `cv05`, `cv06`, `cv11`, `cv12`, `cv15`, `cv17`, `cv18`, `cv25`, `cv28`, `cv43`, `cv70`, `cv71`, `cv81`, and `cv82` for `ss17` under slab.
-
-
-### 27.2.0
-
-* Add characters
-  - TELEPHONE RECORDER (`U+2315`) (#2020).
-  - COUNTERSINK (`U+2335`) (#2020).
-  - BROKEN CIRCLE WITH NORTHWEST ARROW (`U+238B`) (#2020).
-  - TRIPLE PLUS (`U+29FB`) (#2020).
-* Correction of letter assignments for stylistic styles:
-  - Fix `cv10` and `cv30` for `ss14`.
-  - Fix `cv12`, `cv36`, and `cv82` for `ss16`.
-  - Fix `cv22`, `cv31`, `cv47`, and `cv91` for `ss07`.
-  - Fix `cv26` for `ss07`, `ss14`, and `ss15`.
-  - Fix `cv28`, `cv43`, and `cv70` for `ss01`, `ss04`, `ss05`, `ss06`, `ss07`, `ss13`, and `ss16`.
-  - Fix `cv55` for `ss03`, `ss09`, `cv12`, and `ss14`.
-  - Fix `cv53` and `cv84` for `ss10`.
-  - Fix `cv58` for `ss06` and `ss10`.
-  - Fix `cv59` for `ss09` and `ss18`.
-  - Fix `cv61` for `ss08` and `ss20`.
-  - Fix `cv62` for `ss01`.
-  - Fix `cv63` for `ss02`, `ss05`, and `ss12`.
-  - Fix `cv68` for `ss03`.
-  - Fix `cv72` for `ss03`, `ss05`, `ss06`, `cv07`, and `ss13`.
-  - Fix `cv77` for `ss03`, `ss04`, `ss06`, `ss07`, `ss08`, `ss12`, `ss13`, and `ss18`.
-  - Fix `cv79` and `cv80` for `ss01`, `ss02`, `ss04`, `ss05`, `ss06`, `ss07`, `ss09`, `ss12`, `ss13`, `ss14`, `ss16`, `ss18`, and Aile.
-  - Fix `cv88` for `ss18`.
-  - Fix `vsAA` and `vsAM` for `ss06`.
-  - Fix `vsAG` for `ss03` and Etoile.
+* Fix Macedonian Cyrillic Gje under italics (#2493).
+* Improve widths of overline marks of Serbian italic lower Ghe/Pe/Te.
+* Remove crossbar variants for `Z`/`z` when under Polish locale (`PLK`) to avoid confusion with the handwritten `Ż`/`ż` allograph, `Ƶ`/`ƶ`.
+* Make serif variants for Latin Capital/Small Schwa (`Ə`/`ə`) only appear under Turkic (Turkish/Azerbaijani/etc.) locales (`TRK`, `AZE`, `GAG`, `KAZ`, `TAT`, `CRT`) as other languages that use Latin Schwa (including the IPA) unify its metrics with Open O (`Ɔ`/`ɔ`) or a literal Turned E (`Ǝ`/`ǝ`).
+* Make serifs of Latin Letter Small Capital I (`ɪ`) slightly wider under Quasi-Proportional.
+* Make Cyrillic Small Letter Komi Dje (`ԃ`) slightly wider under Quasi-Proportional.
+* Make serifs of Small Capital and Modifier Letter Reversed N (`ᴎ`/`ᴻ`) more accurately follow the serifs of `N`.
+* Make Som Sign (`⃀`) follow variants of capital `C`.
+* Make Latin Capital Letter Small Capital I (`Ɪ`) slightly wider under Etoile.
+* Add Characters:
+  - CYRILLIC CAPITAL LETTER TJE (`U+1C89`) ... CYRILLIC SMALL LETTER TJE (`U+1C8A`).
+  - COMPOSITION SYMBOL (`U+2384`).
+  - WHITE DIAMOND IN SQUARE (`U+26CB`).
+  - DRIVE SLOW SIGN (`U+26DA`).
+  - SQUARED SALTIRE (`U+26DD`) ... FALLING DIAGONAL IN WHITE CIRCLE IN BLACK SQUARE (`U+26DE`).
+  - HEAVY CIRCLED SALTIRE (`U+2B59`).
+  - TOP HALF LEFT PARENTHESIS (`U+2E59`) ... BOTTOM HALF RIGHT PARENTHESIS (`U+2E5C`).
+  - LATIN CAPITAL LETTER RAMS HORN (`U+A7CB`) (#2506).
+  - LATIN CAPITAL LETTER S WITH DIAGONAL STROKE (`U+A7CC`) ... LATIN SMALL LETTER S WITH DIAGONAL STROKE (`U+A7CD`).
+  - LATIN CAPITAL LETTER LAMBDA (`U+A7DA`) ... LATIN CAPITAL LETTER LAMBDA WITH STROKE (`U+A7DC`).
+  - COUNTING ROD UNIT DIGIT ONE (`U+1D360`) ... COUNTING ROD TENS DIGIT NINE (`U+1D371`).
 
 
-### 27.1.0
+### 31.6.1
 
-* \[**Breaking**\] Change of variant names:
-  - `five`.`vertical-upper-left-bar` → `five`.`upright-arched`
-  - `five`.`oblique-upper-left-bar` → `five`.`oblique-arched`
+- Fix broken accent stacking behavior for partially precomposed characters with leaning anchors (#2492).
+
+
+### 31.6.0
+
+* Add Latin localization forms for Polish and Romanian.
+* Make Combining Square Below (`U+033B`) slightly narrower.
+* Improve glyph visual for Combining Suspension Mark (`U+1DC3`).
+* Make Cyrillic Capital/Small Letter Uk (`U+0478`..`U+0479`) slightly narrower under Quasi-Proportional.
+* Make Cyrillic Capital/Small Letter Round Omega (`U+047A`..`U+047B`) slightly wider under Quasi-Proportional.
+
+
+### 31.5.0
+
 * Add characters:
-  - CYRILLIC CAPITAL LETTER DCHE (`U+052C`) (#1897).
-  - CYRILLIC SMALL LETTER DCHE (`U+052D`) (#1897).
-* Add separate variant selector `VXAA` for Cyrillic Lower Er (`р`) (#2006).
-* Add separate variant selector `VXAB` for Cyrillic Lower U (`у`) (#2006).
-* Add flat middle stroke variant for `5` (#1995).
-* Fix variants for Serbian Cyrillic Lower Pe (`п`).
+  - KAYAH LI SIGN CWI (`U+A92E`).
+  - ZERO WIDTH NON-BREAKING SPACE (`U+FEFF`).
+* Add APL form (`APLF`) for `U+25E0` and `U+25E1`, for UIUA.
+* Add Cyrillic localization forms for Bashkir and Chuvash.
 
 
-### 27.0.2
+### 31.4.0
 
-* Add Characters
-  - LATIN LETTER SMALL CAPITAL R WITH RIGHT LEG (`U+AB46`).
-* Add variants for Cyrillic lower Ef (`ф`) with a split bowl (#1992).
-* Add Bulgarian local variants for Cyrillic Ef (`Ф`,`ф`).
-* Fix serifs in `U+01A6`.
-* Improve serifs of Turn M (`U+019C`, `U+026F`) under quasi-proportional.
-* Make Turn h (`U+0265`) and Turn M with Long Leg (`U+0270`) follow serif variants of `u`.
-* Optimize geometry for `U+A65A` and `U+A65B` under extended width.
-* Fix assignment of `8` for `ss14` (#1999).
-
-
-### 27.0.1
-
-* Add Characters
-  - VERY MUCH LESS-THAN (`U+22D8`) (#1990).
-  - VERY MUCH GREATER-THAN (`U+22D9`) (#1990).
-
-
-### 27.0.0
-
-* \[**Breaking**\] Variants for `π`, `τ` and `«` are inserted into the main tag sequence. As a consequence, variant features after them have the tags changed.
-* \[**Breaking**\] Reordered variants of Eszet.
-* \[**Breaking**\] Change of variant names:
-  - `upper-r`.`straight-motion-serifed` → `upper-r`.`straight-top-left-serifed`
-  - `upper-r`.`curly-motion-serifed` → `upper-r`.`curly-top-left-serifed`
-  - `upper-r`.`standing-motion-serifed` → `upper-r`.`standing-top-left-serifed`
-  - `upper-r`.`straight-open-motion-serifed` → `upper-r`.`straight-open-top-left-serifed`
-  - `upper-r`.`curly-open-motion-serifed` → `upper-r`.`curly-open-top-left-serifed`
-  - `upper-r`.`standing-open-motion-serifed` → `upper-r`.`standing-open-top-left-serifed`
 * Add characters:
-  - COMBINING RING OVERLAY (`U+20D8`).
-* Add bottom-right and top-left bottom-right serifed variants of `R`.
-* Add bottom-left motion serifed variants of Cyrillic Ya (`Я`,`я`).
-* Add cursive variants for Cyrillic Capital/Small Zhe (`Ж`,`ж`) (#1762).
-* Allow R Rotunda (`U+A75A`, `U+A75B`) and Indian Rupee Sign (`U+20B9`) to have a bottom-right serif.
-* Add OpenType `zero` feature (#1966).
-* Fix broken geometry of `U+AB3A` under condensed width.
-* Improve bowl shape of Latin Phi (`U+0278`).
-* Fix dot radius of COMBINING THREE DOTS ABOVE (`U+20DB`), COMBINING FOUR DOTS ABOVE (`U+20DC`), and COMBINING TRIPLE UNDERDOT (`U+20D8`).
+  - OCR HOOK (`U+2440`) .. OCR BOW TIE (`U+2445`) (#2465).
+* Add slanted dollar and cent sign (#2408).
+* Add round-top capital A (#2472).
+* Fix `cv41` application to `ss01`, `ss02`, `ss04`, `ss06`, and `ss15`.
+* Fix `cv54` application to `ss01`, `ss03`, `ss04`, `ss06`, `ss07`, `ss09`, `ss12`, `ss14`, `ss15`, `ss17`, and `ss18`.
+* Fix `cv62` application to `ss01`, `ss02`, `ss04`, `ss07`, `ss09`, `ss13`, `ss15`, `ss16`, and `ss18`.
+
+
+### 31.3.0
+
+* Add `diagonal-tailed-cursive` variants for Cyrillic Lower Ef (`cv93`).
+* Add `rounded-vertical-sides` variants for Capital/Lower W (`cv32`, `cv57`).
+* Make Aile and Etoile use `straight` variants for `brace` and `guillemet`.
+* Prevent clipping of texture-extended glyphs in Kitty.
+
+
+### 31.2.0
+
+* Add variant selectors for Greek lower Phi/Psi (`VXAG`, `VXAH`).
+* Optimize cross position for Cyrillic Lower Straight U (`U+04AF`, `U+04B1`).
+* Optimize glyph shape for `lower-gamma`.`straight` and `lower-gamma`.`curly`.
+* Optimize glyph shape for `U+1DF15`.
+
+
+### 31.1.0
+
+* Add characters:
+  - BLACK-LETTER CAPITAL H (`U+210C`) (#714).
+  - BLACK-LETTER CAPITAL I (`U+2111`) (#714).
+  - BLACK-LETTER CAPITAL R (`U+211C`) (#714).
+  - BLACK-LETTER CAPITAL Z (`U+2128`) (#714).
+  - BLACK-LETTER CAPITAL C (`U+212D`) (#714).
+  - LATIN SMALL LETTER BLACKLETTER E (`U+AB32`) (#2443).
+  - LATIN SMALL LETTER BLACKLETTER O (`U+AB3D`) (#2443).
+  - LATIN SMALL LETTER BLACKLETTER O WITH STROKE (`U+AB3E`) (#2443).
+  - LEFT-POINTING ROCKET SHIP (`U+1CC56`) ... DOWN-POINTING ROCKET SHIP (`U+1CC59`) (Proposed for Unicode 16; L2/21-235).
+  - LEFT-POINTING ATOMIC BOMB (`U+1CC60`) ... DOWN-POINTING ATOMIC BOMB (`U+1CC63`) (Proposed for Unicode 16; L2/21-235).
+  - LEFT-POINTING RIFLE (`U+1CC65`) ... DOWN-POINTING RIFLE (`U+1CC68`) (Proposed for Unicode 16; L2/21-235).
+  - MOON LANDER (`U+1CDF5`) (Proposed for Unicode 16; L2/21-235).
+  - UP-POINTING FROG (`U+1CDFB`) (Proposed for Unicode 16; L2/21-235).
+  - DOWN-POINTING FROG (`U+1CDFC`) (Proposed for Unicode 16; L2/21-235).
+  - MATHEMATICAL FRAKTUR CAPITAL A (`U+1D504`) .. MATHEMATICAL FRAKTUR SMALL Z (`U+1D537`) (#444).
+  - MATHEMATICAL BOLD FRAKTUR CAPITAL A (`U+1D56C`) .. MATHEMATICAL BOLD FRAKTUR SMALL Z (`U+1D59F`) (#444).
+* Add separate variant selectors for Cyrillic Capital En/Er (`VXAA`, `VXAB`).
+* Add variant selectors for Greek lower Beta/Gamma/Nu/Upsilon (`VXAC`, `VXAD`, `VXAE`, `VXAF`).
+* Optimize glyph for VERTICAL LINE WITH MIDDLE DOT (`U+2327`).
+* Improve `k` (`cv46`) and `x` (`cv58`) variants used by `ss03`, `ss08`, `ss09`, `ss10`, `ss12`, `ss14`, and `ss18` under slab italic.
+
+
+### 31.0.0
+
+* \[**Breaking**] Changed the mapping between variants and OpenType tags:
+  - Variants for digits (`1` .. `9`) are assigned to tag `cv01` ... `cv09`.
+  - Variant for `0` is assigned to tag `cv10`.
+  - Variants for basic Latin are assigned to tag `cv11` ... `cv60` (50 tags; `O` and `o` do not have variants).
+  - Variants for extended Latin are assigned to tag `cv61` ... `cv66`.
+  - Variants for Greek letters are assigned to tag `cv67` ... `cv78`.
+  - Variants for Cyrillic letters are assigned to tag `cv79` ... `cv99` and `VAAA`.
+  - Variants for dot shapes are assigned to tag `VDAA` ... `VDAD`.
+  - Variants for symbol shapes are assigned to tag `VSAA` ... `VSAT`.
+  - Variants for ligature shapes are assigned to tag `VLAA` ... `VLAG`.
+  - Correspondence table
+
+    <details>    
+
+    | Selector Name | Tag in v30.x | Tag in v31 |
+    | ------------- | ------------ | ---------- |
+    | `one` | `cv86` | `cv01` |
+    | `two` | `cv87` | `cv02` |
+    | `three` | `cv88` | `cv03` |
+    | `four` | `cv89` | `cv04` |
+    | `five` | `cv90` | `cv05` |
+    | `six` | `cv91` | `cv06` |
+    | `seven` | `cv92` | `cv07` |
+    | `eight` | `cv93` | `cv08` |
+    | `nine` | `cv94` | `cv09` |
+    | `zero` | `cv85` | `cv10` |
+    | `capital-a` | `cv01` | `cv11` |
+    | `capital-b` | `cv02` | `cv12` |
+    | `capital-c` | `cv03` | `cv13` |
+    | `capital-d` | `cv04` | `cv14` |
+    | `capital-e` | `cv05` | `cv15` |
+    | `capital-f` | `cv06` | `cv16` |
+    | `capital-g` | `cv07` | `cv17` |
+    | `capital-h` | `cv08` | `cv18` |
+    | `capital-i` | `cv09` | `cv19` |
+    | `capital-j` | `cv10` | `cv20` |
+    | `capital-k` | `cv11` | `cv21` |
+    | `capital-l` | `cv12` | `cv22` |
+    | `capital-m` | `cv13` | `cv23` |
+    | `capital-n` | `cv14` | `cv24` |
+    | `capital-p` | `cv15` | `cv25` |
+    | `capital-q` | `cv16` | `cv26` |
+    | `capital-r` | `cv17` | `cv27` |
+    | `capital-s` | `cv18` | `cv28` |
+    | `capital-t` | `cv19` | `cv29` |
+    | `capital-u` | `cv20` | `cv30` |
+    | `capital-v` | `cv21` | `cv31` |
+    | `capital-w` | `cv22` | `cv32` |
+    | `capital-x` | `cv23` | `cv33` |
+    | `capital-y` | `cv24` | `cv34` |
+    | `capital-z` | `cv25` | `cv35` |
+    | `a` | `cv26` | `cv36` |
+    | `b` | `cv27` | `cv37` |
+    | `c` | `cv28` | `cv38` |
+    | `d` | `cv29` | `cv39` |
+    | `e` | `cv30` | `cv40` |
+    | `f` | `cv31` | `cv41` |
+    | `g` | `cv32` | `cv42` |
+    | `h` | `cv33` | `cv43` |
+    | `i` | `cv34` | `cv44` |
+    | `j` | `cv35` | `cv45` |
+    | `k` | `cv36` | `cv46` |
+    | `l` | `cv37` | `cv47` |
+    | `m` | `cv38` | `cv48` |
+    | `n` | `cv39` | `cv49` |
+    | `p` | `cv40` | `cv50` |
+    | `q` | `cv41` | `cv51` |
+    | `r` | `cv42` | `cv52` |
+    | `s` | `cv43` | `cv53` |
+    | `t` | `cv44` | `cv54` |
+    | `u` | `cv45` | `cv55` |
+    | `v` | `cv46` | `cv56` |
+    | `w` | `cv47` | `cv57` |
+    | `x` | `cv48` | `cv58` |
+    | `y` | `cv49` | `cv59` |
+    | `z` | `cv50` | `cv60` |
+    | `capital-eszet` | `VXAC` | `cv61` |
+    | `long-s` | `cv51` | `cv62` |
+    | `eszet` | `cv52` | `cv63` |
+    | `lower-eth` | `cv53` | `cv64` |
+    | `capital-thorn` | `VXAD` | `cv65` |
+    | `lower-thorn` | `cv54` | `cv66` |
+    | `lower-alpha` | `cv55` | `cv67` |
+    | `capital-gamma` | `cv56` | `cv68` |
+    | `capital-delta` | `cv57` | `cv69` |
+    | `lower-delta` | `cv58` | `cv70` |
+    | `lower-iota` | `cv59` | `cv71` |
+    | `capital-lambda` | `cv60` | `cv72` |
+    | `lower-lambda` | `cv61` | `cv73` |
+    | `lower-mu` | `cv62` | `cv74` |
+    | `lower-xi` | `cv63` | `cv75` |
+    | `lower-pi` | `cv64` | `cv76` |
+    | `lower-tau` | `cv65` | `cv77` |
+    | `lower-chi` | `cv66` | `cv78` |
+    | `cyrl-a` | `——` | `cv79` |
+    | `cyrl-ve` | `——` | `cv80` |
+    | `cyrl-capital-zhe` | `cv67` | `cv81` |
+    | `cyrl-zhe` | `cv68` | `cv82` |
+    | `cyrl-capital-ze` | `cv69` | `cv83` |
+    | `cyrl-ze` | `cv70` | `cv84` |
+    | `cyrl-capital-ka` | `cv71` | `cv85` |
+    | `cyrl-ka` | `cv72` | `cv86` |
+    | `cyrl-el` | `cv73` | `cv87` |
+    | `cyrl-em` | `cv74` | `cv88` |
+    | `cyrl-en` | `cv75` | `cv89` |
+    | `cyrl-er` | `cv76` | `cv90` |
+    | `cyrl-capital-u` | `cv77` | `cv91` |
+    | `cyrl-u` | `cv78` | `cv92` |
+    | `cyrl-ef` | `cv79` | `cv93` |
+    | `cyrl-che` | `cv80` | `cv94` |
+    | `cyrl-yeri` | `cv81` | `cv95` |
+    | `cyrl-yery` | `cv82` | `cv96` |
+    | `cyrl-capital-e` | `VXAA` | `cv97` |
+    | `cyrl-e` | `VXAB` | `cv98` |
+    | `cyrl-capital-ya` | `cv83` | `cv99` |
+    | `cyrl-ya` | `cv84` | `VAAA` |
+    | `tittle` | `cv95` | `VDAA` |
+    | `diacritic-dot` | `cv96` | `VDAB` |
+    | `punctuation-dot` | `cv97` | `VDAC` |
+    | `braille-dot` | `VXAE` | `VDAD` |
+    | `tilde` | `cv98` | `VSAA` |
+    | `asterisk` | `cv99` | `VSAB` |
+    | `underscore` | `VSAA` | `VSAC` |
+    | `caret` | `VSAB` | `VSAD` |
+    | `ascii-grave` | `VSAC` | `VSAE` |
+    | `ascii-single-quote` | `VSAD` | `VSAF` |
+    | `paren` | `VSAE` | `VSAG` |
+    | `brace` | `VSAF` | `VSAH` |
+    | `guillemet` | `VSAG` | `VSAI` |
+    | `number-sign` | `VSAH` | `VSAJ` |
+    | `ampersand` | `VSAI` | `VSAK` |
+    | `at` | `VSAJ` | `VSAL` |
+    | `dollar` | `VSAK` | `VSAM` |
+    | `cent` | `VSAL` | `VSAN` |
+    | `percent` | `VSAM` | `VSAO` |
+    | `bar` | `VSAN` | `VSAP` |
+    | `question` | `VSAO` | `VSAQ` |
+    | `pilcrow` | `VSAP` | `VSAR` |
+    | `partial-derivative` | `VSAQ` | `VSAS` |
+    | `micro-sign` | `VSAR` | `VSAT` |
+    | `lig-ltgteq` | `VLAA` | `VLAA` |
+    | `lig-neq` | `VLAB` | `VLAB` |
+    | `lig-equal-chain` | `VLAC` | `VLAC` |
+    | `lig-hyphen-chain` | `VLAD` | `VLAD` |
+    | `lig-plus-chain` | `VLAE` | `VLAE` |
+    | `lig-double-arrow-bar` | `VLAF` | `VLAF` |
+    | `lig-single-arrow-bar` | `VLAG` | `VLAG` |
+  
+    </details>
+* \[**Breaking**] Reordered variants for Cyrillic Capital/Lower Ze.
+* \[**Breaking**] Add `bilateral-motion-serifed` variants for Capital/Lower X. Change of variant names:
+  - `capital-x`.`straight-motion-serifed` → `capital-x`.`straight-unilateral-motion-serifed`
+  - `capital-x`.`curly-motion-serifed` → `capital-x`.`curly-unilateral-motion-serifed`
+  - `x`.`straight-motion-serifed` → `x`.`straight-unilateral-motion-serifed`
+  - `x`.`curly-motion-serifed` → `x`.`curly-unilateral-motion-serifed`
+  - `lower-chi`.`straight-motion-serifed` → `lower-chi`.`straight-unilateral-motion-serifed`
+  - `lower-chi`.`curly-motion-serifed` → `lower-chi`.`curly-unilateral-motion-serifed`
+* \[**Breaking**] Add `semi-chancery-straight-serifed` and `semi-chancery-curly-serifed` variants for Greek Lower Chi. Change of variant names:
+  - `lower-chi`.`semi-chancery-straight` → `lower-chi`.`semi-chancery-straight-serifless`
+  - `lower-chi`.`semi-chancery-curly` → `lower-chi`.`semi-chancery-curly-serifless`
+  - `lower-chi`.`straight-serifed` → `lower-chi`.`straight-bilateral-motion-serifed`
+  - `lower-chi`.`curly-serifed` → `lower-chi`.`curly-bilateral-motion-serifed`
+* Add separate variant selectors For Cyrillic Lower A/Ve (`cv79`, `cv99`).
+* Optimize the shape of rounded `e` (#2424).
 
