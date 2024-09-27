@@ -3,6 +3,7 @@ node_modules
 
 # Settings
 .settings
+.vscode
 
 # Build artifacts
 .build
@@ -17,7 +18,6 @@ packages/font-otl/src/**/*.mjs
 # Private config files
 private.toml
 private-build-plans.toml
-private.mk
 params/private-parameters.toml
 
 # pages-source ignores
