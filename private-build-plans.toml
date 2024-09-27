@@ -1,0 +1,82 @@
+[collectPlans.mihari-iosevka-ttc]
+from = ["mihari-iosevka"]
+
+# npm run build --ttc::mihari-iosevka-ttc
+
+[buildPlans.mihari-iosevka]
+family = "Mihari Iosevka"
+spacing = "term"
+serifs = "sans"
+no-cv-ss = false
+export-glyph-names = true
+
+  [buildPlans.mihari-iosevka.variants]
+  inherits = "ss12"
+
+    [buildPlans.mihari-iosevka.variants.design]
+    capital-b = "more-asymmetric-interrupted-serifless"
+    capital-i = "short-serifed"
+    capital-j = "flat-hook-serifed-symmetric"
+    capital-k = "curly-serifless"
+    capital-p = "open-serifless"
+    capital-q = "crossing"
+    capital-r = "curly-open-serifless"
+    f = "tailed"
+    g = "double-storey-open"
+    k = "curly-serifless"
+    m = "earless-rounded-double-arch-serifless"
+    t = "bent-hook-asymmetric-short-neck"
+    long-s = "bent-hook-tailed"
+    eszet = "longs-s-lig-descending-serifless"
+    lower-delta = "flat-top"
+    lower-pi = "tailed"
+    cyrl-capital-ka = "curly-serifless"
+    cyrl-ka = "curly-serifless"
+    cyrl-capital-ya = "curly-open-serifless"
+    cyrl-ya = "curly-open-serifless"
+    cyrl-ef = "cursive"
+    zero = "oval-slashed-split"
+    one = "base-long-top-serif"
+    two = "straight-neck"
+    three = "flat-top"
+    four = "semi-open-non-crossing"
+    six = "open-contour"
+    seven = "bend-serifed"
+    nine = "open-contour"
+    asterisk = "hex-low"
+    underscore = "above-baseline"
+    paren = "large-contour"
+    brace = "straight"
+    guillemet = "curly"
+    ampersand = "upper-open"
+    percent = "rings-segmented-slash"
+    lig-neq = "slightly-slanted-dotted"
+
+  [buildPlans.mihari-iosevka.ligations]
+  inherits = "dlig"
+    
+  [buildPlans.mihari-iosevka.metric-override]
+  cap = 670                 # Default=735
+  ascender = 680            # Default=735
+  xHeight = 470             # Default=520
+  symbolMid = 310           # Default=340
+
+# [buildPlans.mihari-iosevka.weights.extralight]
+# shape = 200
+# menu = 200
+# css = 200
+
+# [buildPlans.mihari-iosevka.weights.light]
+# shape = 300
+# menu = 300
+# css = 300
+
+[buildPlans.mihari-iosevka.weights.regular]
+shape = 400
+menu = 400
+css = 400
+
+[buildPlans.mihari-iosevka.widths.normal]
+shape = 500
+menu = 5
+css = "normal"
